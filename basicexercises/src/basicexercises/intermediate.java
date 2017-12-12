@@ -25,6 +25,8 @@ public class intermediate {
 		
 		showPeopleList(personList);
 		System.out.println(searchPerson(personList, "bob"));
+		
+		
 	}
 	
 	public static int blackJack(int a, int b)
@@ -91,6 +93,7 @@ public class intermediate {
 		
 	}
 	
+	// from Person class
 	public static void showPeopleList(ArrayList<Person> personList)
 	{
 		// looping through the Person through the personList
