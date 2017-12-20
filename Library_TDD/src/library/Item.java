@@ -1,6 +1,6 @@
 package library;
 
-public class Item {
+public abstract class Item {
 	private String name;
 	private String author;
 	private int yearOfPublished;

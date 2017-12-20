@@ -3,7 +3,7 @@ package garage;
 import java.util.ArrayList;
 
 public class Garage {
-	private ArrayList<Vehicle> vehicleListType = new ArrayList<Vehicle>();
+	private ArrayList<Vehicle> vehicleListType = new ArrayList<>();
 	
 	
 	// add vehicle method
@@ -12,23 +12,26 @@ public class Garage {
 		vehicleListType.add(v);
 	}
 	
-	public void calculateBill()
+	public String calculateBill()
 	{
+		String d = "";
 		for (Vehicle a : vehicleListType)
 		{
+			
 			if (a instanceof Car)
 			{
-				System.out.println("Bill is £2000");
+				d += "Bill is £2000";
 			}
 			else if (a instanceof Motorbike)
 			{
-				System.out.println("Bill is £1000");
+				d += "Bill is £1000";
 			}
 			else if (a instanceof Bicycle)
 			{
-				System.out.println("Bill is £100");
+				d += "Bill is £100";
 			}
 		}
+		return d;
 	}
 	
 	public void removeVehicle(Vehicle v, int ID) // passing the vehicle
