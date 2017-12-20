@@ -17,6 +17,7 @@ public class Main {
 		String userInput;
 		do {
 			System.out.println("Type your number");
+			@SuppressWarnings("resource")
 			Scanner input = new Scanner(System.in);
 			userInput = input.nextLine();
 			a = checkType(userInput);

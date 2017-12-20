@@ -9,6 +9,7 @@ public class Main {
 		@SuppressWarnings("resource")
 		Scanner reader = new Scanner(System.in);
 		System.out.println("What's your name?");
+		@SuppressWarnings("unused")
 		String s = reader.nextLine();
 		
 		System.out.println("You awaken to find yourself in a Barren Moore.");
